@@ -4,16 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/team-plum/orders-service.git"
+    "server-dev": "node server/index.js"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/team-plum/orders-service/issues"
-  },
-  "homepage": "https://github.com/team-plum/orders-service#readme"
+  "dependencies": {
+    "express": "^4.16.4",
+    "sqlite3": "^4.0.8"
+  }
 }

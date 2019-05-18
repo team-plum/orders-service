@@ -45,7 +45,7 @@ db.serialize(function() {
 
   var stmt1 = db.prepare(`
     INSERT INTO order_food_table (
-    fee, 
+    fee,
     delivery_min,
     delivery_time
     ) VALUES (?, ?, ?)`);

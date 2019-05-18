@@ -1,0 +1,9 @@
+#main1 {
+  position:absolute;
+}
+
+#main1 > div {
+  float:left;
+  padding: 10px;
+  border: 1px solid #d3d3d3;
+}

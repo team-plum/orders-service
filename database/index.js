@@ -9,13 +9,17 @@ var getRandomFee = function() {
 }
 
 var getRandomDeliveryMin = function() {
-  var fee = Math.floor(Math.random() * 10) + 10;
+  var fee = Math.floor(Math.random() * 15) + 10;
   return fee;
 }
 
 var getRandomDeliveryTime = function() {
-  var timeFrom = Math.floor(Math.random() * 10) + 15;
-  var timeTo = Math.floor(Math.random() * 25) + 35;
+  var num = Math.floor(Math.random() * 20);
+  while (num % 5 !== 0) {
+    num += 1;
+  }
+  var timeFrom = num + 15;
+  var timeTo = num + 35;
   var timeStr = timeFrom + '-' + timeTo + ' Mins';
   return timeStr;
 }
@@ -55,9 +59,9 @@ db.serialize(function() {
   }
   stmt1.finalize();
 
-  // db.each(`SELECT * FROM order_food_table LIMIT 5`, function (err, row) {
-  //   console.log(row);
-  // });
+  db.each(`SELECT * FROM order_food_table LIMIT 5`, function (err, row) {
+    console.log(row);
+  });
 
   // creating and seeding table 2
   db.run(`CREATE TABLE IF NOT EXISTS restaurant_info (

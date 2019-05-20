@@ -1,2 +1,2 @@
 # orders-service
-## service for Yelp-like restaurant review
+## service for Yelp restaurant review app

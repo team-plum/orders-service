@@ -1,5 +1,6 @@
 import React from 'react';
 import OrderFoodInfo from './OrderFoodInfo.jsx';
+import OrderFoodForm from './OrderFoodForm.jsx';
 
 class OrderFood extends React.Component {
   constructor(props) {
@@ -25,6 +26,7 @@ class OrderFood extends React.Component {
           deliveryMin={this.props.deliveryMin}
           deliveryTime={this.props.deliveryTime}
         />
+        <OrderFoodForm />
       </div>
     )
   }

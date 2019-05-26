@@ -59,9 +59,9 @@ db.serialize(function() {
   }
   stmt1.finalize();
 
-  db.each(`SELECT * FROM order_food_table LIMIT 5`, function (err, row) {
-    console.log(row);
-  });
+  // db.each(`SELECT * FROM order_food_table LIMIT 5`, function (err, row) {
+  //   console.log(row);
+  // });
 
   // creating and seeding table 2
   db.run(`CREATE TABLE IF NOT EXISTS restaurant_info (

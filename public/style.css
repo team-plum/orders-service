@@ -1,9 +1,24 @@
 #main1 {
-  position:absolute;
+  position: absolute;
 }
 
 #main1 > div {
   float:left;
   padding: 10px;
   border: 1px solid #d3d3d3;
+}
+
+form {
+  margin-top: 70px;
+}
+
+#hours {
+  position: absolute;
+  padding: 0;
+  list-style-type: none;
+}
+
+#hours > div {
+  float: left;
+  padding: 10px;
 }

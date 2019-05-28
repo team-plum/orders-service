@@ -1,19 +1,78 @@
+html {
+  font-family: 'Helvetica Neue';
+}
+
 #main1 {
   position: absolute;
 }
 
 #main1 > div {
-  float:left;
-  padding: 10px;
-  border: 1px solid #d3d3d3;
+  float: left;
+}
+
+h3 {
+  font-weight: bold;
+  margin-bottom: 6px;
+  font-size: 16px;
+  line-height: 1.3125em;
+}
+
+#order_food {
+  color: #333;
+  margin-bottom: 12px;
+  margin-left: 28px;
+  line-height: 1.3125em;
+}
+
+label {
+  font-size: 100%;
+  font-weight: bold;
+  font-size: 14px;
+  color: #333;
+}
+
+.delivery_container {
+  font-size: 12px;
+  line-height: 1.5em;
+  padding: 12px;
+  text-align: center;
+  color: #333;
+  border: 1px solid rgb(204, 204, 204, 0.7);
+}
+
+.delivery_container1 {
+  width: 66.7px;
+  height: 35.5px;
+}
+
+.delivery_attribute_stats {
+  font-weight: bold;
+}
+
+#delivery_address {
+  margin: 6px;
+}
+
+#textInput {
+  font-size: 14px;
+  width: 258px;
+  color: #333;
+  line-height: 1.28571em;
+  padding: 5px 9px 5px 9px;
+  background-color: white;
+  cursor: text;
+  border-width: 2px;
+  border: 1px solid #999;
+  border-radius: 3px;
+  margin-top: 6px;
+  margin-bottom: 6px;
 }
 
 form {
-  margin-top: 70px;
+  margin-top: 94px;
 }
 
 #hours {
-  position: absolute;
   padding: 0;
   list-style-type: none;
 }
@@ -21,4 +80,164 @@ form {
 #hours > div {
   float: left;
   padding: 10px;
+}
+
+#_order {
+  width: 24px;
+  height: 24px;
+  content: '';
+  display: block;
+  position: absolute;
+  padding-top: 14px;
+  opacity: 0.6;
+}
+
+#_clock {
+  width: 24px;
+  height: 24px;
+  content: '';
+  display: table-cell;
+  position: absolute;
+  padding-left: 9px;
+  opacity: 0.6;
+}
+
+#_food {
+  width: 24px;
+  height: 24px;
+  content: '';
+  display: table-cell;
+  position: absolute;
+  padding-left: 9px;
+  opacity: 0.6;
+}
+
+#full_menu {
+  padding-left: 7.5px;
+  vertical-align: middle;
+  font-weight: bold;
+}
+
+#food_div {
+  margin: 19px 0 0 0;
+}
+
+#radio_container {
+  margin-bottom: 16px;
+}
+
+#order_submit {
+  width: 278px;
+  padding: 5px 8px;
+  font-size: 12px;
+  line-height: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  background: #41a700;
+  border: 1px solid #41a700;
+  border-radius: 3px;
+  background-image: none;
+  cursor: pointer;
+}
+
+a {
+  color: #0073bb;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.28571em;
+  margin-left: 38px;
+}
+
+#today_time {
+  font-size: 14px;
+  line-height: 1.28571em;
+  font-weight: bold;
+  color: #333;
+  margin-left: 4px;
+}
+
+#today_div {
+  font-size: 14px;
+  margin-left: 44.5px;
+  color: #333;
+}
+
+#_price {
+  width: 24px;
+  height: 24px;
+  content: '';
+  display: block;
+  position: absolute;
+  font-size: 13px;
+  line-height: 1.38462em;
+  font-weight: bold;
+  color: #41a700;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  padding-left: 4px;
+}
+
+#price_div {
+  margin-top: 19px;
+  color: #333;
+}
+
+#price_range {
+  font-size: 14px;
+  line-height: 1.28571em;
+  font-weight: bold;
+  color: #333;
+  margin-left: 4px;
+}
+
+#pricerange_div {
+  margin-left: 45px;
+  font-size: 14px;
+}
+
+#orderfood {
+  border: 1px solid #ccc;
+  width: 279px;
+  margin: 0 0 18px;
+  padding: 11px;
+}
+
+#businessinfo {
+  border: 1px solid #ccc;
+  width: 279px;
+  margin: 0 0 18px 0;
+  padding: 11px;
+}
+
+#hours_h3 {
+  font-size: 16px;
+  line-height: 1.3125em;
+  color: #d32323;
+}
+
+#hours {
+  margin: 10px 0 6px 0;
+}
+
+.day {
+  font-weight: bold;
+  color: #333;
+  font-size: 14px;
+}
+
+.timeToday {
+  color: #333;
+  font-size: 14px;
+  margin-left: 29px;
+}
+
+#edit_business {
+  margin: 0;
+}
+
+#hours_container {
+  border-left: 1px solid #ccc;
+  width: 279px;
+  padding-left: 26px;
 }

@@ -54,7 +54,6 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <div>React App</div>
         <OrderFood 
           deliveryFee={this.state.fee}
           deliveryMin={this.state.delivery_min}
@@ -64,7 +63,9 @@ class App extends React.Component {
           todayTime={this.state.today_time}
           priceRange={this.state.price_range}
         />
-        <Hours todayTime={this.state.today_time}/>
+        <Hours 
+          todayTime={this.state.today_time}
+        />
       </div>
     )
   }

@@ -8,17 +8,25 @@ class OrderFoodInfo extends React.Component {
   render() {
     return (
       <div id='main1'>
-        <div id='fee_container'>
-          <div>Fee</div>
-          <div>{this.props.deliveryFee}</div>
+        <div class='delivery_container'>
+          <div id='fee_container' class='delivery_container1'>
+            <div class='delivery_attribute'>Fee</div>
+            <div class='delivery_attribute_stats'>${this.props.deliveryFee}</div>
+          </div>
         </div>
-        <div id='delivery_min_container'>
-          <div>Delivery Min</div>
-          <div>{this.props.deliveryMin}</div>
+
+        <div class='delivery_container'>
+          <div id='delivery_min_container' class='delivery_container1'>
+            <div class='delivery_attribute'>Delivery Min</div>
+            <div class='delivery_attribute_stats'>${this.props.deliveryMin}</div>
+          </div>
         </div>
-        <div id='arrives_in_container'>
-          <div>Arrives In</div>
-          <div>{this.props.deliveryTime}</div>
+
+        <div class='delivery_container'>
+          <div id='arrives_in_container' class='delivery_container1'>
+            <div class='delivery_attribute'>Arrives In</div>
+            <div class='delivery_attribute_stats'>{this.props.deliveryTime}</div>
+          </div>
         </div>
       </div>
     )

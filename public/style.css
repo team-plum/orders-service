@@ -237,14 +237,25 @@ a {
   color: #d32323;
 }
 
-#hours {
-  margin: 10px 0 6px 0;
-}
 
 .day {
   font-weight: bold;
   color: #333;
   font-size: 14px;
+}
+
+#days {
+  padding: 0;
+  list-style-type: none;
+  /* width: 26px; */
+}
+
+#days_container {
+  margin-top: -11px;
+}
+
+.days_list {
+  float: left;
 }
 
 .timeToday {
@@ -255,11 +266,14 @@ a {
 
 #edit_business {
   margin: 0;
+  padding: 0;
+  position: absolute;
 }
 
 #hours_container {
   border-left: 1px solid #ccc;
   width: 279px;
+  height: 159px;
   padding-left: 26px;
 }
 

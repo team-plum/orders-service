@@ -27,7 +27,6 @@ class App extends React.Component {
   getOrderFoodData(id) {
     axios.get(`/order/food/${id}`)
     .then(({data}) => {
-      // console.log(data);
       this.setState({
         fee: data.fee,
         delivery_min: data.delivery_min,
@@ -44,7 +43,8 @@ class App extends React.Component {
     .then(({data}) => {
       this.setState({
         today_time: data.hours_today,
-        price_range: data.price_range
+        price_range: data.price_range,
+        health_score: data.health_score
       })
     })
     .catch((err) => {

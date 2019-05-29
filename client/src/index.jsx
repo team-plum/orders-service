@@ -13,7 +13,8 @@ class App extends React.Component {
       delivery_min: 10,
       delivery_time: '20-45 Mins',
       today_time: '11:00 am - 10:00 pm',
-      price_range: 'Under $10'
+      price_range: 'Under $10',
+      health_score: 'A'
     }
   }
 
@@ -62,6 +63,7 @@ class App extends React.Component {
         <BusinessInfo 
           todayTime={this.state.today_time}
           priceRange={this.state.price_range}
+          healthScore={this.state.health_score}
         />
         <Hours 
           todayTime={this.state.today_time}

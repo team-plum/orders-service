@@ -19,16 +19,24 @@ h3 {
 
 #order_food {
   color: #333;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
   margin-left: 28px;
   line-height: 1.3125em;
 }
 
-label {
+#radio_container {
   font-size: 100%;
   font-weight: bold;
   font-size: 14px;
   color: #333;
+}
+
+#takeout {
+  margin-left: 12px;
+}
+
+.radioText {
+  margin-left: 2px;
 }
 
 .delivery_container {
@@ -51,6 +59,9 @@ label {
 
 #delivery_address {
   margin: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
 }
 
 #textInput {
@@ -103,6 +114,16 @@ form {
 }
 
 #_food {
+  width: 24px;
+  height: 24px;
+  content: '';
+  display: table-cell;
+  position: absolute;
+  padding-left: 9px;
+  opacity: 0.6;
+}
+
+#_medical {
   width: 24px;
   height: 24px;
   content: '';
@@ -240,4 +261,29 @@ a {
   border-left: 1px solid #ccc;
   width: 279px;
   padding-left: 26px;
+}
+
+#health_score {
+  padding-left: 7.5px;
+  vertical-align: middle;
+  font-weight: bold;
+}
+
+#healthScore {
+  font-size: 14px;
+  line-height: 1.28571em;
+  font-weight: bold;
+  vertical-align: middle;
+  margin-left: 6px;
+}
+
+#hdScores {
+  font-size: 14px;
+  line-height: 1.28571em;
+  color: #999;
+  padding-left: 44px;
+}
+
+#health_div {
+  margin: 19px 0 0 0;
 }

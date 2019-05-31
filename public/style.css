@@ -309,3 +309,10 @@ a {
   padding-left: 44px;
   margin-bottom: -6px;
 }
+
+.open-tag {
+  font-size: 12px;
+  font-weight: bold;
+  color: #41a700;
+  margin-left: 7px;
+}

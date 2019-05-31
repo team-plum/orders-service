@@ -21,7 +21,7 @@ class Hours extends React.Component {
         <ul id='hours' class='days_list'>
           {weekDays.map((day) => {
             return (
-              <li><span class='timeToday'>{this.props.todayTime}</span></li>
+              <li><span class='timeToday'>{this.props.todayTime}</span><span class='open-tag'></span></li>
             )
           })}
         </ul>

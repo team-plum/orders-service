@@ -15,7 +15,7 @@ class App extends React.Component {
       today_time: '11:00 am - 10:00 pm',
       price_range: 'Under $10',
       health_score: 'A',
-      open_info: 'Closed Now'
+      open_info: 'Closed now'
     }
   }
 
@@ -23,6 +23,7 @@ class App extends React.Component {
     var randomId = Math.floor(Math.random() * 100);
     this.getOrderFoodData(randomId);
     this.getBusinessInfoData(randomId);
+    this.updateOpenInfoInHours();
   }
 
   getOrderFoodData(id) {
@@ -54,6 +55,21 @@ class App extends React.Component {
     return [openHour, closeHour];
   }
 
+  updateOpenInfoInHours() {
+    var weekDays = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
+    var t = Date();
+    var i = weekDays.indexOf(t.slice(0, t.indexOf(' ')));
+    var timeNow = this.getTime();
+    var hoursToday = this.getTodayHours();
+    var text = "";
+    if (timeNow > hoursToday[0] && timeNow < hoursToday[1]) {
+      text = "Open now";
+    } else {
+      text = "Closed now";
+    }
+    document.getElementsByClassName('open-tag')[i].innerText = text;
+  }
+
   getBusinessInfoData(id) {
     axios.get(`/restaurant/info/${id}`)
     .then(({data}) => {
@@ -68,7 +84,7 @@ class App extends React.Component {
       var hoursToday = this.getTodayHours();
       if (timeNow > hoursToday[0] && timeNow < hoursToday[1]) {
         this.setState({
-          open_info: "Open Now"
+          open_info: "Open now"
         })
       }
     })

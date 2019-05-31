@@ -301,3 +301,11 @@ a {
 #health_div {
   margin: 19px 0 0 0;
 }
+
+#open-now {
+  font-size: 12px;
+  font-weight: bold;
+  color: #41a700;
+  padding-left: 44px;
+  margin-bottom: -6px;
+}

@@ -9,8 +9,9 @@ class BusinessInfo extends React.Component {
     return (
       <div id='businessinfo'>
         <div id='clock_div'>
-        <svg id="_clock" height="100%" viewBox="0 0 24 24" width="100%"><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-18c-4.41 0-8 3.59-8 8s3.59 8 8 8 8-3.59 8-8-3.59-8-8-8zm3 11c-.19 0-.384-.055-.555-.168L11 12.535V7a1 1 0 0 1 2 0v4.465l2.555 1.703A1 1 0 0 1 15 15z"></path></svg>
-        <div id='today_div'>Today <span id='today_time'>{this.props.todayTime}</span></div>
+          <svg id="_clock" height="100%" viewBox="0 0 24 24" width="100%"><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-18c-4.41 0-8 3.59-8 8s3.59 8 8 8 8-3.59 8-8-3.59-8-8-8zm3 11c-.19 0-.384-.055-.555-.168L11 12.535V7a1 1 0 0 1 2 0v4.465l2.555 1.703A1 1 0 0 1 15 15z"></path></svg>
+          <div id='today_div'>Today <span id='today_time'>{this.props.todayTime}</span></div>
+          <div id="open-now">{this.props.openInfo}</div>
         </div>
 
         <div id='food_div'>

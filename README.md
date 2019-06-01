@@ -3,7 +3,7 @@
 
 Page demo:
 
-![alt text](https://i.imgur.com/1DfTd7B.png)
+![alt text](https://i.imgur.com/FqMwXjU.png)
 
 ## Related Projects
 

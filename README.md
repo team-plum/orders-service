@@ -2,7 +2,7 @@
 ## service for Yelp-alike restaurant review app
 
 Page demo:
-![alt text](https://i.imgur.com/r1VxsN3.png)
+![alt text](https://i.imgur.com/r1VxsN3.png){:height="50%" width="50%"}
 
 ## Related Projects
 

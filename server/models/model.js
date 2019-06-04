@@ -9,7 +9,7 @@ var getOrderFoodTableData = function(id, callback) {
   db.serialize(function() {
     var queryStr = `SELECT * FROM order_food_table WHERE id=${id}`;
     db.all(queryStr, function(err, rows) {
-      console.log(selectRandom(rows));
+
       if (err) callback(err);
       else callback(null, selectRandom(rows));
     });

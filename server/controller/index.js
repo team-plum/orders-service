@@ -6,8 +6,7 @@ var requestOrderTableDataAction = function(req, res) {
     if (err) {
       res.status(500).send(err);
     } else {
-      console.log(data);
-      res.status(200).send(data);
+      res.send(data);
     }
   })
 }
@@ -18,8 +17,7 @@ var requestRestaurantInfoDataAction = function(req, res) {
     if (err) {
       res.status(500).send(err);
     } else {
-      console.log(data);
-      res.status(200).send(data);
+      res.send(data);
     }
   })
 }
